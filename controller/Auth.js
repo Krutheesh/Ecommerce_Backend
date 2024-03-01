@@ -128,3 +128,13 @@ exports.resetPassword = async (req, res) => {
     res.sendStatus(400);
   }
 };
+
+exports.getAllusers = async(req,res) => {
+
+const allUsers = await User.find({})
+res.status(300).json({
+  success:true,
+  allUsers
+})
+
+}
