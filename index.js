@@ -94,7 +94,8 @@ server.use(
 server.use(passport.authenticate("session"));
 server.use(
   cors({
-    exposedHeaders: ["X-Total-Count"],
+    credentials:true,
+    origin:process.env.FRONTEND_URL
   })
 );
 server.use(express.json()); // to parse req.body
