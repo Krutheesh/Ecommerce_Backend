@@ -12,6 +12,7 @@ let transporter = nodemailer.createTransport({
 
 
 exports.isAuth = (req, res, done) => {
+  console.log(passport.authenticate('jwt'))
   return passport.authenticate('jwt');
 };
 
