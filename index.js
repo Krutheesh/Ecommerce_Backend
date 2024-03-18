@@ -95,7 +95,7 @@ server.use(passport.authenticate("session"));
 server.use(
   cors({
     credentials: true,
-    origin: "http://localhost:3000",
+    origin: process.env.FRONTEND_URL
   })
 );
 server.use(express.json()); // to parse req.body
