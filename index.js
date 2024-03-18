@@ -83,6 +83,7 @@ opts.secretOrKey = process.env.JWT_SECRET_KEY;
 // server.get("*", (req, res) =>
 //   res.sendFile(path.resolve("client/build", "index.html"))
 // );
+server.use(express.static('build'))
 server.use(cookieParser());
 server.use(
   session({
