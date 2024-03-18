@@ -6,7 +6,6 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js"
-    
   },
   "author": "",
   "license": "ISC",
@@ -27,5 +26,8 @@
     "passport-jwt": "^4.0.1",
     "passport-local": "^1.0.0",
     "stripe": "^12.4.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17"
   }
 }
